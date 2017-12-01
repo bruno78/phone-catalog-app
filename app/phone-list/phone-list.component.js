@@ -11,7 +11,8 @@ angular.
 
       $http.get('phones/phones.json').then(function(response) {
         // The server responds by providing the data in the JSON file.
-        self.phones = response.data.slice(0, 5);
+        //self.phones = response.data.slice(0, 5);
+        self.phones = response.data;
       });
     }]
   });
